@@ -1,0 +1,237 @@
+/*-----------------------------------------*/
+/*-BASIC LAYOUT--*/
+/*-----------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: white;
+  color: #555;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+/*-----------------------------------------*/
+/* HEADER */
+/*-----------------------------------------*/
+.menu-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.searchClass {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+  padding: 15px;
+}
+.logo {
+  height: 80px;
+
+  float: left;
+}
+.main-nav {
+  float: right;
+  list-style-type: none;
+}
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 80%;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid burlywood;
+}
+header {
+  background-image: linear-gradient(
+      rgba(53, 48, 48, 0.733),
+      rgba(0, 0, 0, 0.856)
+    ),
+    url("/images/web-banner.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+.main-text-box {
+  position: absolute;
+  top: 58%;
+  left: 28%;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  color: #fff;
+  font-size: 30px;
+  font-style: italic;
+}
+.meal-title,
+.meal,
+.review,
+.reservation {
+  display: flex;
+
+  list-style-type: none;
+
+  background-color: gainsboro;
+  border-radius: 5 px;
+
+  padding: 10px;
+
+  justify-content: center;
+}
+
+.meals-container,
+.render-searchedMeal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 50%;
+
+  justify-content: space-between;
+}
+.book-button {
+  background-color: #eb9950; /* Green */
+  border: none;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.render-meal {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  padding: 15px;
+  color: grey;
+}
+.render-searchedMeal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.render-reservation {
+  text-align: center;
+}
+
+.single-img:hover {
+  opacity: 0.5;
+  transition: 0.9s;
+}
+
+footer > p {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-style: normal;
+  text-align: center;
+}
+.add-form {
+  background-color: gainsboro;
+  border-radius: 5 px;
+  margin-left: 5%;
+  padding: 10px;
+  position: relative;
+  width: 35%;
+  text-align: center;
+  height: 500px;
+}
+.searchClass {
+  display: flex;
+  justify-content: space-between;
+}
+#searchMeal {
+  position: absolute;
+  left: 30%;
+  width: 200px;
+}
+#searchButton {
+  position: absolute;
+  right: 50%;
+}
+
+label {
+  width: 30%;
+  position: absolute;
+  left: 10%;
+
+  margin-right: 30px;
+}
+
+/*-----------------------------------------*/
+/* BUTTONS */
+/*-----------------------------------------*/
+
+.btn:link,
+.btn:visited {
+  border-radius: 25px;
+  display: inline-block;
+  padding: 10px 30px;
+  margin: 15px;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  background-color: #e67e22;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  position: absolute;
+  right: 10%;
+
+  width: 50%;
+}
+h2 {
+  text-align: center;
+  padding: 5px;
+  border: 10 px;
+}
+input[type="submit"] {
+  background-color: #eb9950;
+  padding: 10px;
+  margin: 5px;
+}
+.btn:hover,
+.btn:active {
+  background-color: #eb9950;
+}
+.book-button:link,
+.book-button:visited {
+  color: purple;
+}
+.book-button:hover,
+.book-button:active {
+  background-color: cornflowerblue;
+}
